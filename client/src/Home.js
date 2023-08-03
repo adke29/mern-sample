@@ -5,7 +5,7 @@ function Home() {
   const [users, setUsers] = useState([]);
 
   const fetchData = async () => {
-    const response = await fetch("http://localhost:5050/");
+    const response = await fetch(process.env.REACT_APP_API);
     const data = await response.json();
     setUsers(data);
   };
@@ -16,7 +16,7 @@ function Home() {
 
   const deleteUser = async (id) => {
     if(window.confirm("Are you sure you want to delete this user?")){
-        const response = await fetch("http://localhost:5050/" + id, {
+        const response = await fetch(process.env.REACT_APP_API + id, {
           method: "DELETE",
         });
     }

@@ -17,7 +17,7 @@ function Edit() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5050/" + params.id, {
+    fetch(process.env.REACT_APP_API + params.id, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function Edit() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const record = await fetch("http://localhost:5050/" + params.id);
+      const record = await fetch(process.env.REACT_APP_API + params.id);
       const data = await record.json();
       setForm({
         name: data.name,

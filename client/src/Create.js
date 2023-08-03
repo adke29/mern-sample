@@ -15,7 +15,7 @@ function Create() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:5050",{
+    fetch(process.env.REACT_APP_API,{
         method: "POST",
         headers: {
           "Content-Type": "application/json",
