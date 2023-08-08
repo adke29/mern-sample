@@ -37,6 +37,7 @@ function Create() {
             type="text"
             className="form-control"
             id="name"
+            required
             onChange={(e) => {
               updateForm({ name: e.target.value });
             }}
@@ -61,6 +62,7 @@ function Create() {
               name="positionOptions"
               id="positionIntern"
               value="intern"
+              required
               onChange={(e) => {
                 updateForm({ level: e.target.value });
               }}
@@ -94,6 +96,7 @@ function Create() {
               onChange={(e) => {
                 updateForm({ level: e.target.value });
               }}
+              required
             />
             <label htmlFor="positionSenior" className="form-check-label">
               Senior

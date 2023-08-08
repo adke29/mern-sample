@@ -16,7 +16,7 @@ function Home() {
 
   const deleteUser = async (id) => {
     if(window.confirm("Are you sure you want to delete this user?")){
-        const response = await fetch(process.env.REACT_APP_API + id, {
+        await fetch(process.env.REACT_APP_API + id, {
           method: "DELETE",
         });
     }
