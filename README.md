@@ -3,10 +3,19 @@ This repository aims to assist you in beginning work on a MERN stack application
 
 Since this project will hold both the client application and the server application there will be node modules in two different places. 
 1. Create .env files inside client and server
+<<<<<<< HEAD
 2. write ###REACT_APP_API= (backend name ex: http://localhost:5000)
 
 
 This app can be deployed directly to heroku since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to heroku reference the extra resources at the bottom of this file. 
+=======
+2. Go to client/.env and write REACT_APP_API = (backend name ex: http://localhost:5000)
+3. Go to server/.env and write DB_URI = (database URI ex: mongodb://127.0.0.1:27017/testdb)
+4. Go to the root directory and run `npm run install-server && start-server` to run the server
+5. Open another terminal and `npm run install-client && start-client` to open the frontend
+
+This app can be deployed directly to Render since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to render reference the extra resources at the bottom of this file. 
+>>>>>>> 4b8a629ff383d471a55647f4fa8979f56f02f39f
 
 ## File structure
 #### `client` - Holds the client application
@@ -65,10 +74,18 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn how to setup a local MongoDB instance for testing, check out how to [Connect to MongoDB](https://docs.mongodb.com/guides/server/drivers/).
 
+<<<<<<< HEAD
 To learn how to deploy a full-stack web app to heroku, check out [this great guide](https://daveceddia.com/deploy-react-express-app-heroku/).
+=======
+To learn how to deploy a full-stack web app to render, check out [this great guide]([https://daveceddia.com/deploy-react-express-app-heroku/](https://dev.to/kunalukey/how-to-setup-and-deploy-a-mern-stack-project-for-free-5acl)).
+>>>>>>> 4b8a629ff383d471a55647f4fa8979f56f02f39f
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### `npm run build` fails to minify
 
+<<<<<<< HEAD
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+>>>>>>> 4b8a629ff383d471a55647f4fa8979f56f02f39f
